@@ -225,7 +225,7 @@ export default function Index() {
       <Jumbotron />
       <Modules />
       <Hero />
-      <ForWho />
+      {/* <ForWho /> */}
     </Flex>
   );
 }
