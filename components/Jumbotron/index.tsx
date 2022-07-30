@@ -17,6 +17,72 @@ export default function Jumbotron() {
               width: "100%",
             }}
           />
+          <Flex
+            style={{
+              height: "70vh",
+              width: "100%",
+            }}
+            align="center"
+            position="absolute"
+          >
+            <Flex
+              justify="space-between"
+              flexDir="column"
+              boxShadow="rgba(0,0,0,0.1) 0 0 10px"
+              bg="#FAFAFA"
+              style={{
+                height: 330,
+                width: 600,
+                borderRadius: 10,
+                marginLeft: 70,
+                padding: 30,
+              }}
+            >
+              <Flex flexDir="column">
+                <Text
+                  fontFamily="Comfortaa"
+                  fontWeight="bold"
+                  fontSize={26}
+                  color="#333"
+                >
+                  Instituto Brasileiro de Inteligência Financeira & Mercado de
+                  Capitais
+                </Text>
+                <Text
+                  fontFamily="Comfortaa"
+                  fontWeight="bold"
+                  fontSize={18}
+                  color="#333"
+                  mt="2"
+                  w="80%"
+                >
+                  Importamte para recuperar a saúde financeira de quem está
+                  endividado ou, simplesmente, sem recursos para dar passos
+                  maiores em busca da realização de sonhos.
+                </Text>
+              </Flex>
+              <Flex
+                _hover={{
+                  backgroundColor: "#0c4acd",
+                  color: "#FFF"
+                }}
+                cursor="pointer"
+                mt="4"
+                w="100%"
+                style={{
+                  height: 50,
+                }}
+                borderRadius="5"
+                border="2px solid #0c4acd"
+                justify="center"
+                align="center"
+                fontWeight="bold"
+                color="#0c4acd"
+              >
+                Quero saber mais
+              </Flex>
+            </Flex>
+          </Flex>
         </Flex>
       ) : (
         <Flex flexDir="column">
@@ -43,14 +109,12 @@ export default function Jumbotron() {
                 borderRadius: 10,
                 marginTop: 60,
                 marginLeft: 20,
-                height: 100,
-                width: 300,
-                padding: 20,
-                justifyContent: "center",
-                alignItems: "center",
+                height: 200,
+                width: 350,
+                padding: 30,
               }}
             >
-              <Text color="#333">
+              <Text fontFamily="Comfortaa" color="#333">
                 Instituto Brasileiro de Inteligência Financeira & Mercado de
                 Capitais
               </Text>

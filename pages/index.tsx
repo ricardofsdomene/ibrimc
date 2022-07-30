@@ -50,10 +50,49 @@ export default function Index() {
     );
   }
 
+  function Modules() {
+    return (
+      <Flex
+        py="20"
+        style={{
+          paddingLeft: 20,
+        }}
+        flexDir="column"
+        justify="space-between"
+        h="100vh"
+        w="100%"
+        bg="#FAFAFA"
+      >
+        <Flex flexDir="column">
+          <Text
+            fontSize={size.width < 800 ? 30 : 55}
+            fontFamily="Comfortaa"
+            fontWeight="extrabold"
+            color="#000"
+            w="90%"
+          >
+            Mais de 1.000 investimentos ao seu alcance
+          </Text>
+          <Text
+            fontSize={size.width < 800 ? 18 : 33}
+            mt="4"
+            fontFamily="Comfortaa"
+            color="#000"
+            w="60%"
+          >
+            Se precisar de ajuda, aqui você tem atendimento humanizado 24h por
+            dia, 7 dias por semana.
+          </Text>
+        </Flex>
+      </Flex>
+    );
+  }
+
   return (
     <Flex flexDir="column" bg="#FFF" w="100%">
       <Header />
       <Jumbotron />
+      <Modules />
       <Hero />
       <ForWho />
     </Flex>
