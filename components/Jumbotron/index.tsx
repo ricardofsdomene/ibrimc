@@ -20,7 +20,7 @@ export default function Jumbotron() {
           />
           <Flex
             style={{
-              height: "70vh",
+              height: (size.height / 100) * 70,
               width: "100%",
             }}
             align="center"
@@ -95,10 +95,12 @@ export default function Jumbotron() {
           />
           <Flex
             style={{
-              height: "100vh",
+              height: (size.height / 100) * 50,
               width: "100%",
             }}
             mt="3"
+            justify="center"
+            align="center"
             position="absolute"
           >
             <Flex
