@@ -13,7 +13,7 @@ export default function Header() {
       align="center"
       flexDir="row"
       justify="space-between"
-      bg="#fff"
+      bg="#333"
       w="100%"
       style={{
         paddingLeft: 20,
@@ -29,7 +29,7 @@ export default function Header() {
       /> */}
       <Flex flexDir="column">
         <Text
-          color="#0C4ACD"
+          color="#FFF"
           fontWeight="bold"
           fontFamily="Comfortaa"
           fontSize={25}

@@ -64,44 +64,64 @@ export default function Index() {
         py="10"
         flexDir="column"
         justify="space-between"
-        h="75vh"
+        h={size.width < 800 ? "70vh" : "60vh"}
         w="100%"
-        bg="#FAFAFA"
+        bg="#333"
       >
         <Flex
           flexDir="column"
           style={{
-            paddingLeft: 40,
+            paddingLeft: 20,
           }}
         >
           <Text
-            fontSize={size.width < 800 ? 30 : 40}
+            fontSize={30}
             fontFamily="Comfortaa"
             fontWeight="extrabold"
-            color="#000"
+            color="#FFF"
             w="90%"
           >
             Mais de 1.000 investimentos ao seu alcance
           </Text>
           <Text
-            fontSize={size.width < 800 ? 18 : 24}
+            fontSize={18}
             mt="2"
             fontFamily="Comfortaa"
-            color="#000"
+            color="#FFF"
             w="80%"
           >
             Se precisar de ajuda, aqui você tem atendimento humanizado 24h por
             dia, 7 dias por semana.
           </Text>
+          <Flex
+            _hover={{
+              backgroundColor: "#0c4acd",
+              color: "#FFF",
+            }}
+            cursor="pointer"
+            mt="4"
+            style={{
+              width: 200,
+              height: 50,
+            }}
+            borderRadius="5"
+            border="2px solid #0c4acd"
+            justify="center"
+            align="center"
+            fontWeight="bold"
+            color="#FFF"
+          >
+            Quero saber mais
+          </Flex>
         </Flex>
-        <Flex mt="4" flexDir="column">
+        <Flex mt="10" flexDir="column">
           <Flex overflowX="scroll" pb="5">
             <Flex
               flexDir="column"
               mr="4"
               justify="center"
               style={{
-                marginLeft: 40,
+                marginLeft: 20,
                 backgroundColor: "#DAFAFA",
                 height: 200,
                 width: 240,
@@ -213,10 +233,12 @@ export default function Index() {
                 Quais os tipos de objetivos financeiros
               </Text>
             </Flex>
-            <Flex style={{
-              width: 5,
-              height: 20
-            }}>
+            <Flex
+              style={{
+                width: 5,
+                height: 20,
+              }}
+            >
               <Text style={{ width: 5 }} />
             </Flex>
           </Flex>
@@ -226,11 +248,12 @@ export default function Index() {
   }
 
   return (
-    <Flex flexDir="column" bg="#FFF" w="100%">
+    <Flex flexDir="column" bg="#333" w="100%">
       <Header />
       <Jumbotron />
       <Modules />
       <Hero />
+      <Flex style={{ height: 40 }} />
       {/* <ForWho /> */}
     </Flex>
   );

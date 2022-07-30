@@ -23,7 +23,7 @@ export default class MyDocument extends Document {
                     />
                 </Head>
                 <body style={{
-                    backgroundColor: "#FFF"
+                    backgroundColor: "#333"
                 }}>
                     <Main />
                     <NextScript />

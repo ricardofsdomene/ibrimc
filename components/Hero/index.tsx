@@ -33,7 +33,7 @@ export default function Hero() {
             >
               <Flex flexDir="column">
                 <Text
-                  color="#333"
+                  color="#FFF"
                   fontWeight="bold"
                   fontFamily="Comfortaa"
                   fontSize={26}
@@ -47,37 +47,37 @@ export default function Hero() {
                     marginTop: 20,
                     height: 2,
                     width: "100%",
-                    backgroundColor: "#333",
+                    backgroundColor: "#FFF",
                     borderRadius: 50,
                   }}
                 />
               </Flex>
               <Flex flexDir="column">
-                <Text color="#333" mt="6">
+                <Text color="#FFF" mt="6">
                   Lucas é professor de mercado financeiro e sócio de um dos
                   Escritórios de Investimentos do BTG Pactual, maior Banco de
                   Investimentos da América Latina e terceiro maior banco privado
                   do Brasil.
                 </Text>
-                <Text color="#333" mt="3">
+                <Text color="#FFF" mt="3">
                   O escritório assessora, atualmente, mais de R$500 milhões
                   reais.
                 </Text>
-                <Text color="#333" mt="3">
+                <Text color="#FFF" mt="3">
                   Possui MBA em Investimentos & Private Banking pelo IBMEC-SP e
                   em Direito Tributário pelo IBET, com extensão pelo IBDT/USP.
                 </Text>
-                <Text color="#333" mt="3" w="90%">
+                <Text color="#FFF" mt="3" w="90%">
                   É advogado licenciado (OAB/2011), graduado pela Faculdade de
                   Direito da Universidade Mackenzie, em São Paulo.
                 </Text>
-                <Text color="#333" mt="3">
+                <Text color="#FFF" mt="3">
                   É Auditor Fiscal concursado e ex-sócio fundador de um dos
                   escritórios da XP Investimentos. É sócio da Masterplan
                   Urbanismo, incorporadora que possui projeto com um fundo de
                   investimento imobiliário.
                 </Text>
-                <Text color="#333" mt="3">
+                <Text color="#FFF" mt="3">
                   É sócio da Vernace Capital Partners, boutique financeira
                   especializada em operações financeiras e soluções de capital
                   para o agronegócio e o mercado imobiliário.
@@ -85,14 +85,14 @@ export default function Hero() {
               </Flex>
               <Flex flexDir="column">
                 <Text
-                  color="#333"
+                  color="#FFF"
                   fontSize={26}
                   fontWeight="bold"
                   fontFamily="Didact Gothic"
                 >
                   Lucas F Fleury
                 </Text>
-                <Text color="#333" fontSize={18} fontFamily="Didact Gothic">
+                <Text color="#FFF" fontSize={18} fontFamily="Didact Gothic">
                   Auditor fiscal, founder, banker etc...
                 </Text>
               </Flex>
