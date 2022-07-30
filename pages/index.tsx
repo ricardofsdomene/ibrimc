@@ -214,7 +214,7 @@ export default function Index() {
               </Text>
             </Flex>
             <Flex style={{
-              width: 20
+              width: 40
             }} />
           </Flex>
         </Flex>
