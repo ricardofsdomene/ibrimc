@@ -8,6 +8,9 @@ export default function Index() {
   const size = useWindowSize();
 
   const Hero = dynamic(() => import("../components/Hero"), { ssr: false });
+  const Jumbotron = dynamic(() => import("../components/Jumbotron"), {
+    ssr: false,
+  });
 
   function ForWho() {
     return (
@@ -50,6 +53,7 @@ export default function Index() {
   return (
     <Flex flexDir="column" bg="#FFF" w="100%">
       <Header />
+      <Jumbotron />
       <Hero />
       <ForWho />
     </Flex>

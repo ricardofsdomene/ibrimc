@@ -18,7 +18,7 @@ export default function Header() {
       style={{
         paddingLeft: 20,
         paddingRight: 20,
-        height: 70
+        height: 70,
       }}
     >
       {/* <Image
@@ -27,10 +27,17 @@ export default function Header() {
           height: 50,
         }}
       /> */}
-      <Text color="#0C4ACD" fontWeight="bold" fontFamily="Comfortaa" fontSize={20}>
-        IBRIMC
-      </Text>
-      <Link href="https://mercuriuscrypto.com">
+      <Flex flexDir="column">
+        <Text
+          color="#0C4ACD"
+          fontWeight="bold"
+          fontFamily="Comfortaa"
+          fontSize={25}
+        >
+          IBRIMC
+        </Text>
+      </Flex>
+      {/* <Link href="https://mercuriuscrypto.com">
         <Flex
           cursor="pointer"
           px="4"
@@ -49,7 +56,7 @@ export default function Header() {
             Quero fazer parte
           </Text>
         </Flex>
-      </Link>
+      </Link> */}
     </Flex>
   );
 }
