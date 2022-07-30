@@ -1,8 +1,16 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Icon, Image, Text } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import React from "react";
 import Header from "../components/Header/índex";
 import { useWindowSize } from "../utils/useWindowSize";
+
+import {
+  GrDocumentPerformance,
+  GrDocumentStore,
+  GrDocumentUpload,
+} from "react-icons/gr";
+
+import { BiUser, BiUserPin } from "react-icons/bi";
 
 export default function Index() {
   const size = useWindowSize();
@@ -53,19 +61,21 @@ export default function Index() {
   function Modules() {
     return (
       <Flex
-        py="20"
-        style={{
-          paddingLeft: 20,
-        }}
+        py="10"
         flexDir="column"
         justify="space-between"
-        h="100vh"
+        h="75vh"
         w="100%"
         bg="#FAFAFA"
       >
-        <Flex flexDir="column">
+        <Flex
+          flexDir="column"
+          style={{
+            paddingLeft: 40,
+          }}
+        >
           <Text
-            fontSize={size.width < 800 ? 30 : 55}
+            fontSize={size.width < 800 ? 30 : 50}
             fontFamily="Comfortaa"
             fontWeight="extrabold"
             color="#000"
@@ -74,15 +84,114 @@ export default function Index() {
             Mais de 1.000 investimentos ao seu alcance
           </Text>
           <Text
-            fontSize={size.width < 800 ? 18 : 33}
-            mt="4"
+            fontSize={size.width < 800 ? 18 : 24}
+            mt="2"
             fontFamily="Comfortaa"
             color="#000"
-            w="60%"
+            w="90%"
           >
             Se precisar de ajuda, aqui você tem atendimento humanizado 24h por
             dia, 7 dias por semana.
           </Text>
+        </Flex>
+        <Flex mt="4" flexDir="column">
+          <Flex overflowX="scroll" pb="5">
+            <Flex
+              flexDir="column"
+              mr="4"
+              justify="center"
+              style={{
+                marginLeft: 40,
+                backgroundColor: "#DAFAFA",
+                height: 200,
+                width: 240,
+                borderRadius: 10,
+                padding: 20,
+              }}
+            >
+              <Icon as={GrDocumentUpload} fontSize={33} color="#333" />
+              <Text
+                mt="4"
+                style={{
+                  width: 240,
+                }}
+                color="#333"
+                fontWeight="bold"
+              >
+                Como adquirir Inteligencia Financeira
+              </Text>
+            </Flex>
+            <Flex
+              flexDir="column"
+              mr="4"
+              justify="center"
+              style={{
+                backgroundColor: "#DAFAFA",
+                height: 200,
+                width: 230,
+                borderRadius: 10,
+                padding: 20,
+              }}
+            >
+              <Icon as={GrDocumentStore} fontSize={33} color="#333" />
+              <Text
+                mt="4"
+                style={{
+                  width: 230,
+                }}
+                color="#333"
+                fontWeight="bold"
+              >
+                Como acessar produtos financeiros
+              </Text>
+            </Flex>
+            <Flex
+              flexDir="column"
+              mr="4"
+              justify="center"
+              style={{
+                backgroundColor: "#DAFAFA",
+                height: 200,
+                width: 250,
+                borderRadius: 10,
+                padding: 20,
+              }}
+            >
+              <Icon as={BiUser} fontSize={44} color="#333" />
+              <Text
+                mt="4"
+                style={{
+                  width: 230,
+                }}
+                color="#333"
+                fontWeight="bold"
+              >
+                Em qual perfil de investidor você se enquadra
+              </Text>
+            </Flex>
+            <Flex
+              flexDir="column"
+              mr="4"
+              justify="center"
+              style={{
+                backgroundColor: "#DAFAFA",
+                height: 200,
+                width: 260,
+                borderRadius: 10,
+                padding: 20,
+              }}
+            >
+              <Icon as={GrDocumentPerformance} fontSize={33} color="#333" />
+              <Flex
+                style={{
+                  width: 250,
+                }}
+              />
+              <Text mt="4" w="100%" color="#333" fontWeight="bold">
+                Como avaliar a performance de um investimento
+              </Text>
+            </Flex>
+          </Flex>
         </Flex>
       </Flex>
     );
