@@ -88,7 +88,7 @@ export default function Index() {
             mt="2"
             fontFamily="Comfortaa"
             color="#000"
-            w="70%"
+            w="80%"
           >
             Se precisar de ajuda, aqui você tem atendimento humanizado 24h por
             dia, 7 dias por semana.
@@ -214,8 +214,11 @@ export default function Index() {
               </Text>
             </Flex>
             <Flex style={{
-              width: 40
-            }} />
+              width: 5,
+              height: 20
+            }}>
+              <Text style={{ width: 5 }} />
+            </Flex>
           </Flex>
         </Flex>
       </Flex>
