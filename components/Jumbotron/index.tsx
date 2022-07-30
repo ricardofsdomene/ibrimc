@@ -1,6 +1,9 @@
 import React from "react";
 import { useWindowSize } from "../../utils/useWindowSize";
-import { Flex, Box, Image, Text } from "@chakra-ui/react";
+import { Flex, Box, Text } from "@chakra-ui/react";
+import Image from "next/image";
+
+import mypic from "../../public/banks.jpg";
 
 export default function Jumbotron() {
   const size = useWindowSize();
@@ -10,12 +13,10 @@ export default function Jumbotron() {
       {size.width > 800 ? (
         <Flex>
           <Image
-            src="banks.jpg"
-            objectFit="cover"
-            style={{
-              height: "70vh",
-              width: "100%",
-            }}
+            src={mypic}
+            alt="Picture of the author"
+            width={size.width}
+            height={(size.height / 100) * 70}
           />
           <Flex
             style={{
@@ -64,7 +65,7 @@ export default function Jumbotron() {
               <Flex
                 _hover={{
                   backgroundColor: "#0c4acd",
-                  color: "#FFF"
+                  color: "#FFF",
                 }}
                 cursor="pointer"
                 mt="4"
@@ -87,37 +88,75 @@ export default function Jumbotron() {
       ) : (
         <Flex flexDir="column">
           <Image
-            objectPosition="left"
-            src="banks.jpg"
-            objectFit="cover"
-            style={{
-              height: "50vh",
-              width: "100%",
-            }}
+            src={mypic}
+            alt="Picture of the author"
+            width={size.width}
+            height={(size.height / 100) * 40}
           />
           <Flex
             style={{
               height: "100vh",
               width: "100%",
             }}
+            mt="3"
             position="absolute"
           >
             <Flex
+              justify="space-between"
+              flexDir="column"
               boxShadow="rgba(0,0,0,0.1) 0 0 10px"
               bg="#FAFAFA"
               style={{
+                height: 290,
                 borderRadius: 10,
-                marginTop: 60,
                 marginLeft: 20,
-                height: 200,
-                width: 350,
+                marginRight: 20,
                 padding: 30,
               }}
             >
-              <Text fontFamily="Comfortaa" color="#333">
-                Instituto Brasileiro de Inteligência Financeira & Mercado de
-                Capitais
-              </Text>
+              <Flex flexDir="column">
+                <Text
+                  fontFamily="Comfortaa"
+                  fontWeight="bold"
+                  fontSize={18}
+                  color="#333"
+                >
+                  Instituto Brasileiro de Inteligência Financeira & Mercado de
+                  Capitais
+                </Text>
+                <Text
+                  fontFamily="Comfortaa"
+                  fontWeight="bold"
+                  fontSize={13.5}
+                  color="#333"
+                  mt="2"
+                  w="80%"
+                >
+                  Importamte para recuperar a saúde financeira de quem está
+                  endividado ou, simplesmente, sem recursos para dar passos
+                  maiores em busca da realização de sonhos.
+                </Text>
+              </Flex>
+              <Flex
+                _hover={{
+                  backgroundColor: "#0c4acd",
+                  color: "#FFF",
+                }}
+                cursor="pointer"
+                mt="4"
+                w="100%"
+                style={{
+                  height: 50,
+                }}
+                borderRadius="5"
+                border="2px solid #0c4acd"
+                justify="center"
+                align="center"
+                fontWeight="bold"
+                color="#0c4acd"
+              >
+                Quero saber mais
+              </Flex>
             </Flex>
           </Flex>
         </Flex>

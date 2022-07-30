@@ -75,7 +75,7 @@ export default function Index() {
           }}
         >
           <Text
-            fontSize={size.width < 800 ? 30 : 50}
+            fontSize={size.width < 800 ? 30 : 40}
             fontFamily="Comfortaa"
             fontWeight="extrabold"
             color="#000"
@@ -88,7 +88,7 @@ export default function Index() {
             mt="2"
             fontFamily="Comfortaa"
             color="#000"
-            w="90%"
+            w="70%"
           >
             Se precisar de ajuda, aqui você tem atendimento humanizado 24h por
             dia, 7 dias por semana.
