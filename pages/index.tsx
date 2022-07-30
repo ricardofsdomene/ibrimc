@@ -213,6 +213,9 @@ export default function Index() {
                 Quais os tipos de objetivos financeiros
               </Text>
             </Flex>
+            <Flex style={{
+              width: 20
+            }} />
           </Flex>
         </Flex>
       </Flex>
