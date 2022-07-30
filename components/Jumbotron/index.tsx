@@ -91,7 +91,7 @@ export default function Jumbotron() {
             src={mypic}
             alt="Picture of the author"
             width={size.width}
-            height={(size.height / 100) * 40}
+            height={(size.height / 100) * 50}
           />
           <Flex
             style={{
