@@ -10,7 +10,7 @@ import {
   GrDocumentUpload,
 } from "react-icons/gr";
 
-import { BiUser, BiUserPin } from "react-icons/bi";
+import { BiTargetLock, BiUser, BiUserPin } from "react-icons/bi";
 
 export default function Index() {
   const size = useWindowSize();
@@ -189,6 +189,28 @@ export default function Index() {
               />
               <Text mt="4" w="100%" color="#333" fontWeight="bold">
                 Como avaliar a performance de um investimento
+              </Text>
+            </Flex>
+            <Flex
+              flexDir="column"
+              mr="4"
+              justify="center"
+              style={{
+                backgroundColor: "#DAFAFA",
+                height: 200,
+                width: 260,
+                borderRadius: 10,
+                padding: 20,
+              }}
+            >
+              <Icon as={BiTargetLock} fontSize={33} color="#333" />
+              <Flex
+                style={{
+                  width: 250,
+                }}
+              />
+              <Text mt="4" w="100%" color="#333" fontWeight="bold">
+                Quais os tipos de objetivos financeiros
               </Text>
             </Flex>
           </Flex>
