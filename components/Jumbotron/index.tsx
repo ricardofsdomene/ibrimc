@@ -127,7 +127,7 @@ export default function Jumbotron() {
                 <Text
                   fontFamily="Comfortaa"
                   fontWeight="bold"
-                  fontSize={13.5}
+                  fontSize={12}
                   color="#333"
                   mt="2"
                   w="80%"
