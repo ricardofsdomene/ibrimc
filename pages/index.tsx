@@ -65,26 +65,13 @@ export default function Index() {
             </Text>
           </Flex>
           <Text
-            mt="6"
-            fontSize={size.width < 800 ? 25 : 30}
+            mt="10"
+            w="100%"
+            fontSize={size.width < 800 ? 25 : 33}
             fontWeight="extrabold"
             color="#FFF"
           >
-            E esse é o
-          </Text>
-          <Text
-            fontSize={size.width < 800 ? 25 : 30}
-            fontWeight="extrabold"
-            color="#FFF"
-          >
-            Instituto Brasileiro de Inteligência Financeira
-          </Text>
-          <Text
-            fontSize={size.width < 800 ? 25 : 30}
-            fontWeight="extrabold"
-            color="#FFF"
-          >
-            & Mercado de Capitais
+            Assuma o controle da sua vida financeira
           </Text>
           <Text
             w={size.width < 800 ? 360 : 520}
@@ -97,6 +84,7 @@ export default function Index() {
             realização de sonhos.{" "}
           </Text>
         </Flex>
+        <Flex mt="5" flexDir="column">
         <Text
           mt="4"
           color="#AAA"
@@ -107,8 +95,7 @@ export default function Index() {
         >
           Arraste para ver um pouco do que iremos apresentar nesse curso
         </Text>
-        <Flex mt="5" flexDir="column">
-          <Flex overflowX="scroll" pb="5">
+          <Flex overflowX="scroll" mt="4" pb="5">
             <Flex
               flexDir="column"
               mr="4"
@@ -438,8 +425,8 @@ export default function Index() {
           paddingBottom: 60,
         }}
       >
-        <Flex w="100%" align="center" justify="space-between">
-          <Text fontSize={30} color="#000" fontWeight="bold">
+        <Flex w="100%" align="flex-end" justify="space-between">
+          <Text fontSize={30} color="#000" w="70%" fontWeight="bold">
             Veja o quê nossos alunos estão dizendo sobre o curso
           </Text>
           <Flex>
@@ -509,14 +496,17 @@ export default function Index() {
               w="100%"
               mt="2"
               fontSize={12}
-              textAlign="left"
+              textAlign={size.width < 800 ? "center" : "left"}
               fontFamily="Comfortaa"
             >
-              Boa tarde Lucas! Comecei a te acompanhar há pouco, através do Samer. Parabéns pelo conteúdo, em pouco tempo já me abriu muito a cabeça.
+              Boa tarde Lucas! Comecei a te acompanhar há pouco, através do
+              Samer. Parabéns pelo conteúdo, em pouco tempo já me abriu muito a
+              cabeça.
             </Text>
           </Flex>
           <Flex
-            ml="2"
+            ml={size.width < 800 ? "0" : "4"}
+            mt={size.width < 800 ? "4" : "0"}
             justify="center"
             align="center"
             flexDir="column"
@@ -542,14 +532,17 @@ export default function Index() {
               w="100%"
               mt="2"
               fontSize={12}
-              textAlign="left"
+              textAlign={size.width < 800 ? "center" : "left"}
               fontFamily="Comfortaa"
             >
-              Boa tarde Lucas! Comecei a te acompanhar há pouco, através do Samer. Parabéns pelo conteúdo, em pouco tempo já me abriu muito a cabeça.
+              Boa tarde Lucas! Comecei a te acompanhar há pouco, através do
+              Samer. Parabéns pelo conteúdo, em pouco tempo já me abriu muito a
+              cabeça.
             </Text>
           </Flex>
           <Flex
-            ml="2"
+            ml={size.width < 800 ? "0" : "4"}
+            mt={size.width < 800 ? "4" : "0"}
             justify="center"
             align="center"
             flexDir="column"
@@ -575,10 +568,12 @@ export default function Index() {
               w="100%"
               mt="2"
               fontSize={12}
-              textAlign="left"
+              textAlign={size.width < 800 ? "center" : "left"}
               fontFamily="Comfortaa"
             >
-              Boa tarde Lucas! Comecei a te acompanhar há pouco, através do Samer. Parabéns pelo conteúdo, em pouco tempo já me abriu muito a cabeça.
+              Boa tarde Lucas! Comecei a te acompanhar há pouco, através do
+              Samer. Parabéns pelo conteúdo, em pouco tempo já me abriu muito a
+              cabeça.
             </Text>
           </Flex>
         </Flex>
