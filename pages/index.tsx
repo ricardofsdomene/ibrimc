@@ -64,7 +64,7 @@ export default function Index() {
         py="10"
         flexDir="column"
         justify="space-between"
-        h={size.width < 800 ? "70vh" : "60vh"}
+        h={size.width < 800 ? "80vh" : "60vh"}
         w="100%"
         bg="#333"
       >
