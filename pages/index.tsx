@@ -23,10 +23,10 @@ export default function Index() {
   function Modules() {
     return (
       <Flex
-        py="10"
+        py="5"
         flexDir="column"
         justify="space-between"
-        h={size.height - 80}
+        h={size.height - 60}
         w="100%"
         bg="#000"
       >
@@ -60,13 +60,25 @@ export default function Index() {
           </Flex>
           <Text
             mt="6"
-            fontSize={size.width < 800 ? 22 : 30}
+            fontSize={size.width < 800 ? 25 : 30}
             fontWeight="extrabold"
             color="#FFF"
-            w={size.width < 800 ? 480 : 640}
           >
-            E esse é o Instituto Brasileiro de Inteligência Financeira & Mercado
-            de Capitais
+            E esse é o
+          </Text>
+          <Text
+            fontSize={size.width < 800 ? 25 : 30}
+            fontWeight="extrabold"
+            color="#FFF"
+          >
+            Instituto Brasileiro de Inteligência Financeira
+          </Text>
+          <Text
+            fontSize={size.width < 800 ? 25 : 30}
+            fontWeight="extrabold"
+            color="#FFF"
+          >
+            & Mercado de Capitais
           </Text>
           <Text
             w={size.width < 800 ? 360 : 520}
@@ -79,6 +91,16 @@ export default function Index() {
             realização de sonhos.{" "}
           </Text>
         </Flex>
+        <Text
+          mt="4"
+          color="#AAA"
+          fontSize={12}
+          style={{
+            marginLeft: 20,
+          }}
+        >
+          Arraste para ver um pouco do que iremos apresentar nesse curso
+        </Text>
         <Flex mt="5" flexDir="column">
           <Flex overflowX="scroll" pb="5">
             <Flex
@@ -208,239 +230,124 @@ export default function Index() {
             </Flex>
           </Flex>
         </Flex>
-        <Flex flexDir="column">
-          <Flex overflowX="scroll" pb="5">
-            <Flex
-              flexDir="column"
-              mr="4"
-              justify="center"
-              style={{
-                marginLeft: 20,
-                backgroundColor: "#FFF",
-                height: 200,
-                width: 240,
-                borderRadius: 10,
-                padding: 20,
-              }}
+        <Flex flexDir="column"></Flex>
+      </Flex>
+    );
+  }
+
+  function Risks() {
+    return (
+      <Flex flexDir="column">
+        <Flex
+          flexDir="column"
+          bg="#000"
+          py="5"
+          style={{
+            paddingLeft: 20,
+            paddingRight: 20,
+            paddingBottom: 80,
+          }}
+        >
+          <Text
+            fontWeight="bold"
+            color="#FFF"
+            w={size.width > 800 ? "70%" : "100%"}
+            maxW={600}
+            fontSize={size.width < 800 ? 25 : 35}
+          >
+            Para onde remar neste Oceano de Informações chamado internet?{" "}
+          </Text>
+          <Text
+            mt="2"
+            fontWeight="bold"
+            color="#00F269"
+            w={size.width > 800 ? "70%" : "100%"}
+            maxW={600}
+            fontSize={size.width < 800 ? 14 : 20}
+          >
+            Conteúdos sobre o mercado financeiro circulam na internet de forma
+            desordenada (muitas vezes incompletas ou inverídicas) publicadas por
+            fontes com diferentes interesses.{" "}
+          </Text>
+        </Flex>
+        <Flex
+          bg="#000"
+          style={{
+            paddingLeft: 20,
+            paddingRight: 20,
+          }}
+        >
+          <Flex
+            borderRadius="10"
+            flexDir="column"
+            bg="#00b069"
+            w="100%"
+            style={{
+              paddingTop: 50,
+              paddingBottom: 60,
+              paddingLeft: size.width < 800 ? 20 : 150,
+              paddingRight: size.width < 800 ? 20 : 150,
+            }}
+          >
+            <Text
+              color="#FFF"
+              w="100%"
+              textAlign="center"
+              fontWeight="bold"
+              fontSize={40}
             >
-              <Icon as={GrDocumentUpload} fontSize={33} color="#333" />
-              <Text
-                mt="4"
-                style={{
-                  width: 240,
-                }}
-                color="#333"
-                fontWeight="bold"
-              >
-                Como adquirir Inteligencia Financeira
-              </Text>
-            </Flex>
-            <Flex
-              flexDir="column"
-              mr="4"
-              justify="center"
-              style={{
-                backgroundColor: "#FFF",
-                height: 200,
-                width: 230,
-                borderRadius: 10,
-                padding: 20,
-              }}
+              ⚠️
+            </Text>
+            <Text
+              mt="5"
+              color="#FFF"
+              w="100%"
+              textAlign="center"
+              fontWeight="bold"
+              fontSize={size.width < 800 ? 13 : 25}
             >
-              <Icon as={GrDocumentStore} fontSize={33} color="#333" />
-              <Text
-                mt="4"
-                style={{
-                  width: 230,
-                }}
-                color="#333"
-                fontWeight="bold"
-              >
-                Como acessar produtos financeiros
-              </Text>
-            </Flex>
-            <Flex
-              flexDir="column"
-              mr="4"
-              justify="center"
-              style={{
-                backgroundColor: "#FFF",
-                height: 200,
-                width: 250,
-                borderRadius: 10,
-                padding: 20,
-              }}
-            >
-              <Icon as={BiUser} fontSize={44} color="#333" />
-              <Text
-                mt="4"
-                style={{
-                  width: 230,
-                }}
-                color="#333"
-                fontWeight="bold"
-              >
-                Em qual perfil de investidor você se enquadra
-              </Text>
-            </Flex>
-            <Flex
-              flexDir="column"
-              mr="4"
-              justify="center"
-              style={{
-                backgroundColor: "#FFF",
-                height: 200,
-                width: 260,
-                borderRadius: 10,
-                padding: 20,
-              }}
-            >
-              <Icon as={GrDocumentPerformance} fontSize={33} color="#333" />
-              <Flex
-                style={{
-                  width: 250,
-                }}
-              />
-              <Text mt="4" w="100%" color="#333" fontWeight="bold">
-                Como avaliar a performance de um investimento
-              </Text>
-            </Flex>
-            <Flex
-              flexDir="column"
-              mr="4"
-              justify="center"
-              style={{
-                backgroundColor: "#FFF",
-                height: 200,
-                width: 260,
-                borderRadius: 10,
-                padding: 20,
-              }}
-            >
-              <Icon as={BiTargetLock} fontSize={33} color="#333" />
-              <Flex
-                style={{
-                  width: 250,
-                }}
-              />
-              <Text mt="4" w="100%" color="#333" fontWeight="bold">
-                Quais os tipos de objetivos financeiros
-              </Text>
-            </Flex>
-            <Flex
-              style={{
-                width: 5,
-                height: 20,
-              }}
-            >
-              <Text style={{ width: 5 }} />
-            </Flex>
+              Ao consumir esses conteúdos de forma aleatória e desorganizada,
+              você corre um sério risco de ser negativamente influenciado nessa
+              área essencial da sua vida.
+            </Text>
           </Flex>
         </Flex>
       </Flex>
     );
   }
 
-  function X() {
-    function XItem(props: any) {
-      return (
-        <Flex mb="4" align="center">
-          <Icon
-            mr="3"
-            mt="1"
-            as={BsFillPatchCheckFill}
-            color="purple"
-            fontSize={30}
-          />
-          <Text fontSize={16} fontWeight="bold" color="#000">
-            {props.title}
-          </Text>
-        </Flex>
-      );
-    }
-
-    //findocs.com.br/wp-content/uploads/2022/05/bghome02-1.png
-
-    https: return (
-      <Flex h="93.8vh" justify="space-between">
-        <Flex flexDir="column" justify="space-between">
-          <Flex flexDir="column">
-            <Text fontSize={30} color="#000" fontWeight="bold">
-              Mais de 1500 alunos atestam
-            </Text>
-            <Text fontSize={24} color="#000">
-              somos a plataforma de educação que faltava no mercado financeiro
-            </Text>
-            <Flex flexDir="column" mt="6">
-              <XItem title="Como interpretar os indicadores do mercado" />
-              <XItem title="Como investir melhor em cada fase da sua vida" />
-              <XItem title="Quais são os principais tipos de investimentos" />
-              <XItem title="Quais são as grandes decisões da sua vida que impactam a sua vida financeira" />
-              <XItem title="Como usar a inteligência financeira ao seu favor ao longo do tempo" />
-              <XItem title="Como usar a estratégia da antecipação financeira ao seu favor" />
-              <XItem title="Quais são os principais conceietos que regem o mercado financeiro" />
-              <XItem title="Quem são os principais agentes financeiros do país" />
-            </Flex>
-          </Flex>
-          <Flex
-            zIndex="1000000000"
-            _hover={{
-              textDecorationLine: "underline",
-              backgroundColor: "purple",
-              color: "#FFF",
-            }}
-            cursor="pointer"
-            style={{
-              width: "100%",
-              height: 50,
-            }}
-            borderRadius="5"
-            bg="purple"
-            justify="center"
-            align="center"
-            fontWeight="bold"
-            color="#FFF"
-            mt="4"
-          >
-            Quero me inscrever
-          </Flex>
-        </Flex>
-        {size.width > 800 && (
-          <Image
-            zIndex="99999999"
-            src="banks.jpg"
-            ml="4"
-            mr={-2}
-            borderRadius="15"
-            style={{
-              width: "60%",
-            }}
-          />
-        )}
+  function Solution() {
+    return (
+      <Flex
+        bg="#000"
+        w="100%"
+        style={{
+          paddingTop: 60,
+          paddingBottom: 60,
+          paddingLeft: 20,
+          paddingRight: 20,
+        }}
+        flexDir="column"
+      >
+        <Text
+          color="#FFF"
+          fontSize={size.width < 800 ? 20 : 30}
+          fontWeight="bold"
+        >
+          Por outro lado, consumir um conteúdo organizado de forma sistemática e
+          inteligente é imprescindível para administrar melhor os seus recursos
+          financeiros com foco em segurança e performance.
+        </Text>
       </Flex>
     );
   }
 
   return (
-    <ReactFullpage
-      scrollingSpeed={1000} /* Options here */
-      render={({ state, fullpageApi }) => {
-        return (
-          <ReactFullpage.Wrapper>
-            <div className="section">
-              <Flex flexDir="column" h="100vh" w="100%">
-                <Header />
-                <Modules />
-              </Flex>
-            </div>
-            <div className="section">
-              <Flex flexDir="column" px="6" pt="8" h="100vh" w="100%">
-                <X />
-              </Flex>
-            </div>
-          </ReactFullpage.Wrapper>
-        );
-      }}
-    />
+    <Flex flexDir="column" w="100%">
+      <Header />
+      <Modules />
+      <Risks />
+      <Solution />
+    </Flex>
   );
 }
