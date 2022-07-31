@@ -4,6 +4,7 @@ import React from "react";
 import Header from "../components/Header/índex";
 import { useWindowSize } from "../utils/useWindowSize";
 
+import { GiAbstract114, GiBarbedStar, GiCycle } from "react-icons/gi";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 
 import ReactFullpage from "@fullpage/react-fullpage"; // will return static version on server and "live" version on client
@@ -330,6 +331,7 @@ export default function Index() {
         flexDir="column"
       >
         <Text
+          mt="4"
           color="#FFF"
           fontSize={size.width < 800 ? 20 : 30}
           fontWeight="bold"
@@ -338,6 +340,82 @@ export default function Index() {
           inteligente é imprescindível para administrar melhor os seus recursos
           financeiros com foco em segurança e performance.
         </Text>
+        <Flex
+          flexDir={size.width < 800 ? "column" : "row"}
+          mt="10"
+          justify="space-between"
+        >
+          <Flex
+            justify="center"
+            align="center"
+            flexDir="column"
+            bg="#FFF"
+            w={size.width < 800 ? "100%" : "33%"}
+            boxShadow="rgba(255,255,255,0.9) 0 0 10px"
+            borderRadius="10"
+            p="10"
+          >
+            <Icon as={GiCycle} color="green" fontSize={40} />
+            <Text
+              color="green"
+              w="100%"
+              textAlign="center"
+              fontWeight="bold"
+              mt="4"
+              fontFamily="Comfortaa"
+            >
+              Entenda os ciclos do Mercado Financeiro
+            </Text>
+          </Flex>
+          <Flex
+            mt={size.width < 800 ? "4" : "0"}
+            ml={size.width < 800 ? "0" : "4"}
+            w={size.width < 800 ? "100%" : "33%"}
+            justify="center"
+            align="center"
+            flexDir="column"
+            bg="#FFF"
+            boxShadow="rgba(255,255,255,0.9) 0 0 10px"
+            borderRadius="10"
+            p="10"
+          >
+            <Icon as={GiAbstract114} color="green" fontSize={40} />
+            <Text
+              color="green"
+              w="100%"
+              textAlign="center"
+              fontWeight="bold"
+              mt="4"
+              fontFamily="Comfortaa"
+            >
+              Decida melhor em relação às suas finanças
+            </Text>
+          </Flex>
+          <Flex
+            ml={size.width < 800 ? "0" : "4"}
+            mt={size.width < 800 ? "4" : "0"}
+            w={size.width < 800 ? "100%" : "33%"}
+            justify="center"
+            align="center"
+            flexDir="column"
+            bg="#FFF"
+            boxShadow="rgba(255,255,255,0.9) 0 0 10px"
+            borderRadius="10"
+            p="10"
+          >
+            <Icon as={GiBarbedStar} color="green" fontSize={40} />
+            <Text
+              color="green"
+              w="100%"
+              textAlign="center"
+              fontWeight="bold"
+              mt="4"
+              fontFamily="Comfortaa"
+            >
+              Dialogue com segurança sobre finanças e investimentos
+            </Text>
+          </Flex>
+        </Flex>
       </Flex>
     );
   }
@@ -348,6 +426,15 @@ export default function Index() {
       <Modules />
       <Risks />
       <Solution />
+      {
+        // prova social
+        // FAQ
+        // modulos
+        // instrutor
+        // informacoes necessarias grid
+        // pricing
+        // selos de seguranca/garantia
+      }
     </Flex>
   );
 }
