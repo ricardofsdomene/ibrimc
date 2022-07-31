@@ -12,6 +12,7 @@
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@fullpage/react-fullpage": "^0.1.26",
     "@types/coingecko-api": "^1.0.10",
     "axios": "^0.27.2",
     "coingecko-api": "^1.0.10",

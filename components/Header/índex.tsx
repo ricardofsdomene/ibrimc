@@ -13,30 +13,45 @@ export default function Header() {
       align="center"
       flexDir="row"
       justify="space-between"
-      bg="#333"
+      bg="#FFF"
       w="100%"
       style={{
         paddingLeft: 20,
         paddingRight: 20,
-        height: 70,
+        height: 80,
       }}
     >
-      {/* <Image
-        src="logo-h.png"
-        style={{
-          height: 50,
-        }}
-      /> */}
-      <Flex flexDir="column">
+      <Flex flexDir="row" align="center">
         <Text
-          color="#FFF"
+          cursor="pointer"
+          color="#333"
           fontWeight="bold"
           fontFamily="Comfortaa"
-          fontSize={25}
+          fontSize={16}
         >
-          IBRIMC
+          Ibrimc
         </Text>
       </Flex>
+        <Flex
+          _hover={{
+            backgroundColor: "#000",
+            color: "#FFF",
+          }}
+          cursor="pointer"
+          style={{
+            width: 200,
+            height: 45,
+          }}
+          borderRadius="5"
+          border="2px solid #333"
+          justify="center"
+          align="center"
+          fontWeight="bold"
+          color="#333"
+        >
+          Quero me inscrever
+        </Flex>
+
       {/* <Link href="https://mercuriuscrypto.com">
         <Flex
           cursor="pointer"
