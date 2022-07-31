@@ -1,11 +1,16 @@
 import { Box, Flex, Icon, Image, Text } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header/índex";
 import { useWindowSize } from "../utils/useWindowSize";
 
 import { GiAbstract114, GiBarbedStar, GiCycle } from "react-icons/gi";
-import { BsFillPatchCheckFill } from "react-icons/bs";
+import {
+  BsArrowLeft,
+  BsArrowRight,
+  BsChat,
+  BsFillPatchCheckFill,
+} from "react-icons/bs";
 
 import ReactFullpage from "@fullpage/react-fullpage"; // will return static version on server and "live" version on client
 
@@ -412,9 +417,198 @@ export default function Index() {
               mt="4"
               fontFamily="Comfortaa"
             >
-              Dialogue com segurança sobre finanças e investimentos
+              Identifique boas oportunidades do Mercado Financeiro
             </Text>
           </Flex>
+        </Flex>
+      </Flex>
+    );
+  }
+
+  function Reviews() {
+    const [page, setPage] = useState<0 | 1 | 2>(0);
+
+    return (
+      <Flex
+        flexDir="column"
+        style={{
+          paddingLeft: 20,
+          paddingRight: 20,
+          paddingTop: 60,
+          paddingBottom: 60,
+        }}
+      >
+        <Flex w="100%" align="center" justify="space-between">
+          <Text fontSize={30} color="#000" fontWeight="bold">
+            Veja o quê nossos alunos estão dizendo sobre o curso
+          </Text>
+          <Flex>
+            <Flex
+              cursor="pointer"
+              _hover={{
+                backgroundColor: "#BBB",
+              }}
+              mr="2"
+              bg="#EEE"
+              justify="center"
+              align="center"
+              style={{
+                height: 30,
+                width: 30,
+                borderRadius: 30,
+              }}
+            >
+              <Icon as={BsArrowLeft} color="#333" fontSize={16} />
+            </Flex>
+            <Flex
+              _hover={{
+                backgroundColor: "#BBB",
+              }}
+              cursor="pointer"
+              justify="center"
+              align="center"
+              bg="#EEE"
+              style={{
+                height: 30,
+                width: 30,
+                borderRadius: 30,
+              }}
+            >
+              <Icon as={BsArrowRight} color="#333" fontSize={16} />
+            </Flex>
+          </Flex>
+        </Flex>
+        <Flex
+          flexDir={size.width < 800 ? "column" : "row"}
+          mt="12"
+          justify="space-between"
+        >
+          <Flex
+            justify="center"
+            align="center"
+            flexDir="column"
+            bg="#FFF"
+            w={size.width < 800 ? "100%" : "33%"}
+            boxShadow="rgba(0,0,0,0.1) 0 0 10px"
+            borderRadius="10"
+            p="10"
+          >
+            <Icon as={BsChat} color="green" fontSize={40} />
+            <Text
+              color="#333"
+              w="100%"
+              textAlign="center"
+              fontWeight="bold"
+              mt="4"
+              fontFamily="Comfortaa"
+            >
+              Nayara Avila
+            </Text>
+            <Text
+              color="green"
+              w="100%"
+              mt="2"
+              fontSize={12}
+              textAlign="left"
+              fontFamily="Comfortaa"
+            >
+              Boa tarde Lucas! Comecei a te acompanhar há pouco, através do Samer. Parabéns pelo conteúdo, em pouco tempo já me abriu muito a cabeça.
+            </Text>
+          </Flex>
+          <Flex
+            ml="2"
+            justify="center"
+            align="center"
+            flexDir="column"
+            bg="#FFF"
+            w={size.width < 800 ? "100%" : "33%"}
+            boxShadow="rgba(0,0,0,0.1) 0 0 10px"
+            borderRadius="10"
+            p="10"
+          >
+            <Icon as={BsChat} color="green" fontSize={40} />
+            <Text
+              color="#333"
+              w="100%"
+              textAlign="center"
+              fontWeight="bold"
+              mt="4"
+              fontFamily="Comfortaa"
+            >
+              Nayara Avila
+            </Text>
+            <Text
+              color="green"
+              w="100%"
+              mt="2"
+              fontSize={12}
+              textAlign="left"
+              fontFamily="Comfortaa"
+            >
+              Boa tarde Lucas! Comecei a te acompanhar há pouco, através do Samer. Parabéns pelo conteúdo, em pouco tempo já me abriu muito a cabeça.
+            </Text>
+          </Flex>
+          <Flex
+            ml="2"
+            justify="center"
+            align="center"
+            flexDir="column"
+            bg="#FFF"
+            w={size.width < 800 ? "100%" : "33%"}
+            boxShadow="rgba(0,0,0,0.1) 0 0 10px"
+            borderRadius="10"
+            p="10"
+          >
+            <Icon as={BsChat} color="green" fontSize={40} />
+            <Text
+              color="#333"
+              w="100%"
+              textAlign="center"
+              fontWeight="bold"
+              mt="4"
+              fontFamily="Comfortaa"
+            >
+              Nayara Avila
+            </Text>
+            <Text
+              color="green"
+              w="100%"
+              mt="2"
+              fontSize={12}
+              textAlign="left"
+              fontFamily="Comfortaa"
+            >
+              Boa tarde Lucas! Comecei a te acompanhar há pouco, através do Samer. Parabéns pelo conteúdo, em pouco tempo já me abriu muito a cabeça.
+            </Text>
+          </Flex>
+        </Flex>
+        <Flex mt="12" w="100%" justify="center">
+          <Flex
+            style={{
+              height: 10,
+              width: 10,
+              borderRadius: 10,
+              backgroundColor: "#AAA",
+            }}
+          />
+          <Flex
+            ml="2"
+            style={{
+              height: 10,
+              width: 10,
+              borderRadius: 10,
+              backgroundColor: "#EEE",
+            }}
+          />
+          <Flex
+            ml="2"
+            style={{
+              height: 10,
+              width: 10,
+              borderRadius: 10,
+              backgroundColor: "#EEE",
+            }}
+          />
         </Flex>
       </Flex>
     );
@@ -426,6 +620,7 @@ export default function Index() {
       <Modules />
       <Risks />
       <Solution />
+      <Reviews />
       {
         // prova social
         // FAQ
